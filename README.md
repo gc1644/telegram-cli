@@ -1,6 +1,6 @@
 # telegram-cli
 
-Super minimal terminal Telegram client.  
+Terminal Telegram client.  
 Just text messages, chat list, and basic send/receive.
 
 Built with Python + TDLib (python-telegram).
