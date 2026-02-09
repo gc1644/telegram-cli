@@ -15,7 +15,7 @@ PHONE = "+1234567890"     # your phone number
 # ──────────────────────────────────────
 
 # Where TDLib will store data (sessions, cache, etc.)
-TDATA_DIR = os.path.expanduser("~/.mytelegram-cli")
+TDATA_DIR = os.path.expanduser("~/.telegram-cli")
 os.makedirs(TDATA_DIR, exist_ok=True)
 
 tg = None
@@ -78,7 +78,7 @@ async def main_loop():
     global current_chat_id
     
     session = PromptSession(
-        history=FileHistory(os.path.expanduser("~/.mytelegram-cli/history")),
+        history=FileHistory(os.path.expanduser("~/.telegram-cli/history")),
         enable_open_in_editor=True,
         multiline=False,
         key_bindings=bindings,
